@@ -46,18 +46,18 @@
   </div>
 </nav>
 
-    <div class="container row" style=" padding-left: 100px; padding-top: 25px; padding-top: 50px;">
+    <div class="container row" style="margin-left: 50px; padding-left: 100px; padding-top: 25px; padding-top: 50px;">
     <% datos.forEach(function(dato){ %> 
-      <div class="card col-md-4 ">
-        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+      <div class="card text-white bg-dark col-xl-4 ">
+        <img src='<%= dato.Imagen %>' class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%= dato.Modelo %></h5>
           <p class="card-text"><%= dato.Descripcion %></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><p>Marca: <%= dato.Marca %></p></li>
-          <li class="list-group-item"><p>Año: <%= dato.Año %></p></li>
-          <li class="list-group-item"><p>Kilometros: <%= dato.Kilometros %></p></li>
+          <li class="list-group-item text-white bg-dark "><p>Marca: <%= dato.Marca %></p></li>
+          <li class="list-group-item text-white bg-dark "><p>Año: <%= dato.Año %></p></li>
+          <li class="list-group-item text-white bg-dark "><p>Kilometros: <%= dato.Kilometros %></p></li>
         </ul>
         <div class="card-body">
         </div>
