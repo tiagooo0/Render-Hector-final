@@ -53,6 +53,11 @@ app.use(bodyParser.json())
 
 app.set('view engine', 'ejs')
 
+app.get('/', (req, res) => {
+    res.render('modelHome', {datos})
+    
+})
+
 app.get('/Cars', (req, res) => {
     res.render('model', {datos})
     
